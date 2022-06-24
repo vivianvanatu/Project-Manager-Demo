@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+		<head>
+			<script src="js/main.js"></script>
+			<link rel="stylesheet" href="css/projects.css">
+			<link rel="stylesheet" href="css/common.css">
+			<title>Project Management Application - employees</title>
+		</head>
+
+		<body onload="displayContent('projects')">
+			<div class="topmenu">
+				<div class="img_container">
+					<img src="images/logo.png" alt="Logo" height="30" />
+				</div>
+				<div class="company_title">
+					Leaf Ltd
+				</div>
+				<div class="menu_item">
+					<a class="menu_item_link" href="index.html">Employees</a>
+				</div>
+				<div class="menu_item active">
+					<a class="menu_item_link" href="projects.html">Projects</a>
+				</div>
+				<div class="menu_item">
+					<a class="menu_item_link" onclick="doLogout()">Logout</a>
+				</div>
+			</div>
+			<div class="add_container">
+					<button class="addEmpButton blue" onclick="addNewProject()">Add New Project</button>
+			</div>
+			
+			<div class="table_container">
+				<table id="projects_table" cellspacing="0" cellpadding="7">
+					
+				</table>
+			</div>
+		</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <title>Update Value</title>
+    <script>
+      let paramvalue = 10.27;
+      function updateValue() {
+        const main = document.getElementById('main');  // selecteaza elementul cu id-ul main in html
+        
+        main.innerHTML = paramvalue;   // pune variabila paramvalue in elementul cu id-ul main
+        paramvalue++;
+      }
+      function reload() {
+        setInterval(updateValue, 1000); // ruleaza functia updateValue o data la 1000 milisecunde
+      }
+    </script>
+    <style>
+      .main-full {            /* Stiluri pentru elementul afisat */
+        font-size: 24px;
+        color: red;
+      }
+    </style>
+
+
+  </head>
+
+  <body onload="reload();"> <!-- ruleaza functia reload la incarcarea elementului body -->
+    <div id="main" class="main-full"></div> <!-- elementul cu id-ul main -->
+  </body>
+</html>
